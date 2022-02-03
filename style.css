@@ -107,3 +107,43 @@ color:black;
 
 video{ align-content: center;}
 
+.error {
+  font-size: 15px;
+  color: red; 
+  font-weight: bold;
+} 
+
+input:invalid {
+  border: 2px dashed rgb(253, 251, 251);
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+input:required {
+    background-color:whitesmoke;
+}
+
+
+input:checked {
+    color: black;
+}
+
+input:read-only {
+    background-color: black;
+}
+
+
+form {
+  background-color:blue);
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 16px;
+  border: 0.3px solid #eaeaea;
+  border-radius: 5%;
+  
+  
+}
+
+

@@ -15,6 +15,9 @@
     <title>Kanine Kandies</title>
 
 </head>
+
+
+
 <div class="navbar">
     <a href="Socialtips.html">Grooming</a>
     <a href="dogage.html">Your Puppys Age</a>
@@ -112,6 +115,67 @@ video {align-content: center;}
 
 
 <body>
+  <form name="contactForm" id="form" onsubmit="return validateForm()" action=" " method="get" autocomplete="on">
+    <h2>Application Form</h2>
+    <div class="row">
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+        <div class="error" id="nameErr"></div>
+    </div>
+    <br>
+    <div class="row">
+        <label>Email Address</label>
+        <input type="text" name="email" required maxlength="20">
+        <div class="error" id="emailErr"></div>
+    </div>
+    <br>
+    <div class="row">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile">
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <br>
+    <div class="row">
+        <label>Password</label>
+        <input type="password" name="password">
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <br>
+<div class="row">
+        <label>Country</label>
+        <select name="country">
+            <option>Select</option>
+            <option>Canada</option>
+            <option>Mexico</option>
+            <option>United States</option>
+            <option>Greenland</option>
+        </select>
+        <div class="error" id="countryErr"></div>
+    </div>
+    <br>
+    <div class="row">
+        <label>Gender</label>
+        <div class="form-inline">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+        <div class="error" id="genderErr"></div>
+    </div>
+    <br>
+    <div class="row">
+        <label>Hobbies <i>(Optional)</i></label>
+        <div class="form-inline">
+            <label><input type="checkbox" name="hobbies[]" value="sports"> Art</label>
+            <label><input type="checkbox" name="hobbies[]" value="art">Fashion</label>
+            <label><input type="checkbox" name="hobbies[]" value="music"> Music</label>
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+
+
     <script>
         var ageCheck = window.prompt("please enter your age:");
         if (ageCheck < 18) {
@@ -153,6 +217,9 @@ video {align-content: center;}
 <p>Find your furry friend!</p>
 <h2>COntact us Today!</h2>
     <img src="images/pp.png" width=750px height=500px alt="dog" class="center">
+
+
+
 <script src="app.js"></script>  
 
 </body>
